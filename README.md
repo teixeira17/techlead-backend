@@ -1,7 +1,10 @@
 # techlead-backend
-Analista Desenvolvedor Java Jr\n\n
+Analista Desenvolvedor Java Jr
+
+
 Foi realizado o desafio na linguaguem Java, para o back-end, utilizando o framework Spring Boot. Foi escolhido a linguagem java pois é a que mais tenho identificação, com a ajuda do Spring Boot, aonde é facilitado o desenvolvimento do projeto Web.
 DUMP do banco de dados POSTGRESS ABAIXO
+
 
 PGDMP     :    $                  z            techlead    12.6    12.6     &           0    0    ENCODING    ENCODING        SET client_encoding = 'UTF8';
                       false            '           0    0 
@@ -127,9 +130,11 @@ ZG?Û
 
 *********************************************************************************************
 Carga Inicial do banco de dados
+
 INSERT INTO public.tb_role(
 	id, authority)
 	VALUES (1, 'ROLE_CLIENTE');
+	
 INSERT INTO public.tb_role(
 	id, authority)
 	VALUES (2, 'ROLE_ADMINISTRADOR');
@@ -137,6 +142,7 @@ INSERT INTO public.tb_role(
 INSERT INTO public.tb_user(
 	id, email, name, password)
 	VALUES (1, 'bob@gmail.com', 'Bob', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+	
 INSERT INTO public.tb_user(
 	id, email, name, password)
 	VALUES (2, 'ana@gmail.com', 'Ana', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
@@ -144,6 +150,7 @@ INSERT INTO public.tb_user(
 INSERT INTO public.tb_user_role(
 	user_id, role_id)
 	VALUES (1, 1);
+	
 INSERT INTO public.tb_user_role(
 	user_id, role_id)
 	VALUES (2, 2);
@@ -151,9 +158,11 @@ INSERT INTO public.tb_user_role(
 INSERT INTO public.tb_livros(
 	id, data_cadastro, autor, nome, id_user)
 	VALUES (1, null, 'JK Rowling', 'Harry Potter 1', 1);
+	
 INSERT INTO public.tb_livros(
 	id, data_cadastro, autor, nome, id_user)
 	VALUES (2, null, 'JK Rowling', 'Harry Potter 2', 2);
+	
 INSERT INTO public.tb_livros(
 	id, data_cadastro, autor, nome, id_user)
 	VALUES (3, null, 'JK Rowling', 'Harry Potter 3', 2);
